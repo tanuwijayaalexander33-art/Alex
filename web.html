@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakso Legendaris - Nikmat & Bergizi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif, Arial;
+        }
+
+        body {
+            background-color: #fffaf0;
+            color: #333;
+        }
+
+        /* Navigasi */
+        header {
+            background: #d32f2f;
+            color: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?q=80&w=1500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0 20px;
+        }
+
+        .cta-btn {
+            background: #ffc107;
+            color: #333;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .cta-btn:hover {
+            background: #e6ac00;
+            transform: scale(1.05);
+        }
+
+        /* Menu Section */
+        .menu-section {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .menu-section h2 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #d32f2f;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-bottom: 5px solid #d32f2f;
+            transition: 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-card h3 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #d32f2f;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            nav ul { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🍜 BAKSO JOS</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <h1>Bakso Sapi Asli & Urat Mantap</h1>
+            <p>Resep turun temurun dengan kuah kaldu yang gurihnya nagih.</p>
+            <a href="https://wa.me/6285179935061?text=Halo%20Bakso%20Jos,%20saya%20mau%20pesan%20baksonya!" class="cta-btn" target="_blank">Pesan Sekarang</a>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <h2>Daftar Menu Favorit</h2>
+            <div class="menu-container">
+                <div class="menu-card">
+                    <h3>Bakso Halus</h3>
+                    <p>Tekstur lembut, full daging sapi pilihan.</p>
+                    <p class="price">Rp 15.000</p>
+                </div>
+                <div class="menu-card">
+                    <h3>Bakso Urat</h3>
+                    <p>Urat sapi melimpah, tekstur kenyal dan gurih.</p>
+                    <p class="price">Rp 18.000</p>
+                </div>
+                <div class="menu-card">
+                    <h3>Bakso Mercon</h3>
+                    <p>Isian sambal cabai rawit yang bikin meledak.</p>
+                    <p class="price">Rp 20.000</p>
+                </div>
+                <div class="menu-card">
+                    <h3>Bakso Telur</h3>
+                    <p>Satu butir telur ayam utuh di dalam bakso jumbo.</p>
+                    <p class="price">Rp 20.000</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="lokasi">
+        <p><strong>Alamat:</strong> Jl. Raya Makan Enak No. 123, Indonesia</p>
+        <p>Buka setiap hari: 10.00 - 21.00 WIB</p>
+        <p>WhatsApp: 085179935061</p>
+        <br>
+        <p>&copy; 2026 Bakso Jos. Semua Rasa Berawal di Sini.</p>
+    </footer>
+
+</body>
+</html>
